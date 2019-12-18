@@ -15,5 +15,7 @@ The controller is an ESP8266 WeMos Mini Pro board: https://www.amazon.com/Extern
 The code is written so that the ESP8266 creates an access point. Once powered ON you can connect to this WiFi device with your phone or a local computer. See the detailed operating instructions included.  
 
 
+The code is called 4_CH_AP (4 channel access point). It serves the built in web page and allows for control of the hardware. The code is written to allow for over the air (OTA) updates later on. If you desire to update the code then follow the link shown in the program and supply the binary compiled file to load. 
+
 
 

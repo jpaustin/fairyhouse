@@ -17,5 +17,7 @@ The code is written so that the ESP8266 creates an access point. Once powered ON
 
 The code is called 4_CH_AP (4 channel access point). It serves the built in web page and allows for control of the hardware. The code is written to allow for over the air (OTA) updates later on. If you desire to update the code then follow the link shown in the program and supply the binary compiled file to load. 
 
+The hardware, besides the power listed above, includes four power transistors (NMOS protected switches) to drive the loads. The ESP8255 can only drive a few milliamps of current. The drivers will supply the loads with a path to GND. NMOS switches are not used on the positive rail but for the ground side of a circuit. Two pins per channel are provided. +5V and the switched GND via the transitor. Do not drive the LED's directly from the port pins or you can damage the conttroller. The smoke machine requires almost 1A of current alone so there is no other way to use that but employ a power transistor. 
+
 
 

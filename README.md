@@ -12,7 +12,7 @@ An Adafruit Power Boost 1000 https://www.adafruit.com/product/2465 is the UPS li
                                               
 The controller is an ESP8266 WeMos Mini Pro board: https://www.amazon.com/External-Antenna-Connector-ESP-8266EX-Development/dp/B07T1D6G6Z/ref=sr_1_11?keywords=wemos+mini+pro&qid=1576705909&sr=8-11 This board has a very large 16Mb of program memory and the board has an external WiFi antenna connector option. If you use the external antenna make sure you modify the board by moving the small surface mount jumper. 
 
-The code is written so that the ESP8266 creates an access point. Once powered ON you can connect to this WiFi device with your phone or a local computer. Search for the "Fairy Controller" WiFi access point. Once connected open a Web page and type: 192.168.4.1 and the control page will come up. 
+The code is written so that the ESP8266 creates an access point. Once powered ON you can connect to this WiFi device with your phone or a local computer. See the detailed operating instructions included.  
 
 
 

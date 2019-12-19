@@ -22,7 +22,7 @@
 
  Once the web page is open six buttons are shown. 4 buttons are for the external peripherals (Smoke + 3 LED channels). The fifth button at the bottom
  is a LED test button. The test button turns the built in blue LED on the WeMos board ON or OFF. Always a good idea to test to make sure the phone and 
- controller are communicating properly. The sixth buttun was added late to allow for automatic ON/OFF lighting. Only applies to light channels.
+ controller are communicating properly. The sixth button was addeed later to allow for automatic ON/OFF of the lighting channels. 
 
  Try to use only one phone to control the Fairy House. The AP will accept upto 5 simultaneous connections but the control web page is not very sophisticated so 
  it's simpler to use one phone/tablet to control the device. Multiple phones/tablets will work but some of the displayed state of the buttons will not be 
@@ -115,16 +115,13 @@ void loop(){
   WiFiClient client = server.available();   // Listen for incoming clients
   webota.handle();
 
-  
   // Add analog read section to determine if the light sensor is LOW enough to turn on the lights automatically
   // Normal analog read tends to take too long and causes WiFi connection issues. 
   // Added count to read ananlog pin every 100K loops. End up beng about once every 1.5 seconds. 
   //
   // Sensor is a simple light dependent resistor (LDR). These sensors are low cost and work well. 
   // See here: http://www.esp8266learning.com/wemos-ldr-example.php
-  //
-  
-  and the  
+  //  
   if (count == 100000) {
   sensorValue = analogRead(analogInPin);
   Serial.println(sensorValue);
@@ -299,9 +296,7 @@ void loop(){
               input1State = "off";
               mask = 0;
             }
-           
-
-          
+         
             // Display the HTML web page
             client.println("<!DOCTYPE html><html>");
             client.println("<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
@@ -369,7 +364,6 @@ void loop(){
             } else {
               client.println("<p><a href=\"/I1/off\"><button class=\"button button2\">OFF</button></a></p>");
             }
-
 
           client.println("</body></html>");
             

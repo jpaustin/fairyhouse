@@ -20,9 +20,9 @@
 
  Open a Web Browser and type in 192.168.4.1 to access the Fairy Controller Web Page. 
 
- Once the web page is open five buttons are shown. 4 buttons are for the external peripherals (Smoke + 3 LED channels). The fifth button at the bottom
+ Once the web page is open six buttons are shown. 4 buttons are for the external peripherals (Smoke + 3 LED channels). The fifth button at the bottom
  is a LED test button. The test button turns the built in blue LED on the WeMos board ON or OFF. Always a good idea to test to make sure the phone and 
- controller are communicating properly. 
+ controller are communicating properly. The sixth buttun was added late to allow for automatic ON/OFF lighting. Only applies to light channels.
 
  Try to use only one phone to control the Fairy House. The AP will accept upto 5 simultaneous connections but the control web page is not very sophisticated so 
  it's simpler to use one phone/tablet to control the device. Multiple phones/tablets will work but some of the displayed state of the buttons will not be 

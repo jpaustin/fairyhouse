@@ -1,5 +1,5 @@
 # fairyhouse
-An ESP8266 acceass point type web server that controls 4 independent outputs
+An ESP8266 access point (AP) type web server that controls 4 independent outputs
 
 This controller was initially desgined for my sisters hobbies. She likes to create miniature dioramas that appear to be Fairy Houses. As she added more and more details to these outdoor creations she started to add lights and a smoke generator to the intricate facades. I created this controller to allow her to turn on or off the various lights or smoke generator from a web page that is being served from the controller. THis is hosted on an ESP8266 controller. I used the Arduino development system to write and test the code. 
 
